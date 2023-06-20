@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="vertical"
+    android:id="@+id/mainNativeQrekaImage"
+    android:layout_width="match_parent"
+    android:layout_height="133dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/ad_app_icon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="4dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:gravity="center"
+                                        android:layout_width="18dp"
+                                        android:layout_height="13.5dp"
+                                        android:layout_marginTop="1.5dp"
+                                        app:cardBackgroundColor="#1f6ba5">
+
+                                        <TextView
+                                            android:textSize="9dp"
+                                            android:textColor="@android:color/white"
+                                            android:gravity="center"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:text="AD" />
+                                    </androidx.cardview.widget.CardView>
+
+                                    <RatingBar
+                                        android:id="@+id/ad_stars"
+                                        android:visibility="visible"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:numStars="5"
+                                        android:stepSize="4.5"
+                                        android:isIndicator="true"
+                                        style="?android:attr/ratingBarStyleSmall" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@android:color/black"
+                                    android:ellipsize="end"
+                                    android:id="@+id/ad_headline"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Qureka Lite"
+                                    android:maxLines="1"
+                                    android:singleLine="true" />
+
+                                <TextView
+                                    android:textSize="12sp"
+                                    android:textColor="@android:color/black"
+                                    android:ellipsize="end"
+                                    android:id="@+id/ad_body"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Play More Win More"
+                                    android:maxLines="1"
+                                    android:singleLine="true" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="4dp">
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:textColor="@android:color/black"
+                            android:ellipsize="end"
+                            android:gravity="top"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:maxLines="2" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        android:layout_gravity="end"
+                        android:id="@+id/ad_call_to_action"
+                        android:background="@drawable/install_btn"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:layout_width="115dp"
+                        android:layout_height="36dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="Open"
+                        android:layout_alignParentBottom="true"
+                        android:textAllCaps="true"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
